@@ -51,7 +51,13 @@ import tensorflow as tf
 
 bs = BertSim()
 bs.set_mode(tf.estimator.ModeKeys.PREDICT)
-bs.test
+sim.set_mode(tf.estimator.ModeKeys.PREDICT)
+while True:
+    sentence1 = input('sentence1: ')
+    sentence2 = input('sentence2: ')
+    predict = sim.predict(sentence1, sentence2)
+    print(f'similarity：{predict[0][1]}')
+
 ```
 
 5、DEMO中自带了蚂蚁金服的测试数据供大家使用
