@@ -14,7 +14,7 @@
 
 首次生成句向量时需要加载graph，并在output_dir路径下生成一个新的graph文件，因此速度比较慢，再次调用速度会很快
 ```
-from bert.extrac_feature import BertVector
+from extract_feature import BertVector
 bv = BertVector()
 bv.encode(['今天天气不错'])
 ```
