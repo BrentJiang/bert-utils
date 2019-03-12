@@ -49,8 +49,7 @@ bs.eval()
 from similarity import BertSim
 import tensorflow as tf
 
-bs = BertSim()
-bs.set_mode(tf.estimator.ModeKeys.PREDICT)
+sim = BertSim()
 sim.set_mode(tf.estimator.ModeKeys.PREDICT)
 while True:
     sentence1 = input('sentence1: ')
